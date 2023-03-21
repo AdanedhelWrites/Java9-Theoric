@@ -15,7 +15,7 @@ public class DiziDenemesi {
 			System.out.println("Elemanlari: "+sayi[i]+" Toplamlari: " + toplam );
 		}
 		ort += toplam / sayi.length;
-		System.out.println("Toplamlari: " + toplam +" Ortalamalari: " + ort);
+		System.out.println("Toplamlari: " + toplam +" Ortalamalari: " + ort);// süreyle dene :D
 
 	}
 
