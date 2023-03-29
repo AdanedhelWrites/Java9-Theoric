@@ -8,6 +8,8 @@ public class Car {
 	public double km;
 	public int hiz;
 	
+	
+	
 	public double go(double gidilenKm) {
 		km+=gidilenKm;
 		//Zamani dönelim

@@ -1,4 +1,4 @@
-package com.adanedhel.hafta04.gun02OOP;
+package com.adanedhel.hafta04.gun03;
 
 public class Runner {
 	
@@ -16,9 +16,15 @@ public class Runner {
 		araba1.km=10000;
 		System.out.println(araba1.getInfo());
 		
+		Motor motor1 = new Motor();
+		motor1.sasiNo="ADNDHL 2323";
+		motor1.motorHacmi=1500;
+		motor1.beygir=90;
+		motor1.tork=350;
 		
-		
-		
+		araba1.motor = motor1;
+		System.out.println("Motor hacmi: " + araba1.motor.motorHacmi);
+		araba1.motor.getInfo();
 		
 		
 		araba2.marka = "Toyota";
@@ -32,6 +38,14 @@ public class Runner {
 		System.out.println(araba1.marka);
 		System.out.println(araba2.marka);
 		
+		
+		Car araba4=new Car("Mazda", "G3");
+		System.out.println(araba4.getInfo());
+		
+		Car araba5=new Car("Hyundai", "i20", 2012, 120000, motor1);
+		System.out.println(araba5.getInfo());
+		araba5.motor.getInfo();
+	
 	}
 	
 	
