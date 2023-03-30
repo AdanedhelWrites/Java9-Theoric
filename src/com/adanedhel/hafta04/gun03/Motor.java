@@ -4,10 +4,23 @@ public class Motor {
 	public int motorHacmi;
 	public int beygir;
 	public int tork;
-	public String sasiNo;
-	
+	private String sasiNo;
+
 	public void getInfo() {
-		System.out.println("Motor Hacmi: " + motorHacmi + " Sasi No:  " + sasiNo + " Tork:  "+ tork + " Beygir: " + beygir);
+		System.out.println(
+				"Motor Hacmi: " + motorHacmi + " Sasi No:  " + sasiNo + " Tork:  " + tork + " Beygir: " + beygir);
 	}
-	
+
+	public String getSasiNo() {
+		return sasiNo;
+	}
+
+	public void setSasiNo(String sasiNo) {
+		if (sasiNo.length() == 8) {
+			this.sasiNo = sasiNo;
+		} else {
+			System.err.println("Bu bir sasi numarasi degildir..");
+
+		}
+	}
 }
