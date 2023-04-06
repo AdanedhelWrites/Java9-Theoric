@@ -1,6 +1,4 @@
 package com.adanedhel.hafta05.abstracts;
-
-
 public class Kedi extends Hayvan{
 
 	public Kedi(String ad, int kilosu, int boy) {
@@ -13,7 +11,7 @@ public class Kedi extends Hayvan{
 		
 		System.out.println(getAd()+" Meow");
 	}
-	
+
 	
 
 }
