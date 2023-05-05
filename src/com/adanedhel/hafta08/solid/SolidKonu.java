@@ -42,7 +42,30 @@ public class SolidKonu {
 	 * Böyle bir durumda interfaceleri bölerek kullanmalısın.
 	 * 
 	 * Dependency Inversion Principle - DIP
+	 * 
+	 * Yüksek seviye sınıflar düşük seviye sınıflara bağlı olmamalıdır.
+	 * Her ikiside soyut kavramlara bağlı olmalıdır. (abstract class, interface)
+	 * 
+	 * 
 	 */
+}
+class OracleDatabase implements IDatabase{
+	public void add(Object o) {
+		System.out.println("Eklendi");
+	}
+}
+interface IDatabase{
+	void add(Object o);
+}
+class HataRaporlama{
+	private IDatabase database;
+	//default constructor
+	public HataRaporlama(IDatabase database) {
+		this.database=database;
+	}
+	public void hataRaporla(Exception exception) {
+		database.add(exception);
+	}
 }
 interface IEleman{
 	
